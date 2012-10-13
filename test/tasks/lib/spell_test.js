@@ -20,7 +20,7 @@ exports.spell = (function() {
   _test.errors = function(test) {
     test.expect(1);
     hooker.hook(spell, 'printTypos', function(typos) {
-      test.ok(typos.length === 7, 'Did not find 7 expected typos.');
+      test.ok(typos.length === 7, 'Did not find 7 expected typos. Instead found ' + typos.length + '.');
     });
     spell.checkSpelling(path.join(this.fixtures, 'errors.md'), test.done);
   };
@@ -28,7 +28,7 @@ exports.spell = (function() {
   _test.noerrors = function(test) {
     test.expect(1);
     hooker.hook(spell, 'printTypos', function(typos) {
-      test.ok(typos.length === 0, 'Found a typo when it should have not.');
+      test.ok(typos.length === 0, 'Found ' + typos.length + ' typo(s) when it should have found 0.');
     });
     spell.checkSpelling(path.join(this.fixtures, 'noerrors.md'), test.done);
   };

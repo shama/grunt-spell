@@ -67,6 +67,7 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 Lint and test your code using [grunt][grunt].
 
 ## Release History
+* 0.1.1 - Refactored for tests, bug fixes when no typos or spelling suggestions.
 * 0.1.0 - Initial release
 
 ## License

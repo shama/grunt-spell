@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "teacher": "~0.0.1",
-    "grunt-contrib-lib": "~0.3.0"
+    "grunt-lib-contrib": "~0.3.0"
   },
   "devDependencies": {
     "grunt": "~0.3.15"

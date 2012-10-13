@@ -3,7 +3,7 @@ module.exports = function(grunt) {
   grunt.initConfig({
     spell: {
       all: {
-        src: ['test/*'],
+        src: ['test/fixtures/*'],
         options: {
           lang: 'en',
           ignore: ['cliches']
@@ -12,6 +12,9 @@ module.exports = function(grunt) {
     },
     lint: {
       files: ['grunt.js', 'tasks/**/*.js']
+    },
+    test: {
+      files: ['test/**/*_test.js']
     },
     watch: {
       files: '<config:lint.files>',

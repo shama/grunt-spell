@@ -1,4 +1,4 @@
-# grunt-spell
+# grunt-spell [![Build Status](https://secure.travis-ci.org/shama/grunt-spell.png?branch=master)](http://travis-ci.org/shama/grunt-spell)
 
 A Grunt plugin for spellchecking.
 

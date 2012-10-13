@@ -46,7 +46,7 @@ exports.init = function(grunt, options) {
     typos = typos || [];
 
     if (typos.length < 1) {
-      grunt.log.ok('No errors found.');
+      grunt.log.ok('No errors found.').writeln('');
       return;
     }
 
@@ -55,7 +55,7 @@ exports.init = function(grunt, options) {
 
     typos.forEach(function(typo) {
       // Get suggestions
-      var sug = typo.suggestions.option;
+      var sug = (typo.suggestions && typo.suggestions.option) || [];
       if (typeof sug === 'string') {
         sug = [sug];
       }

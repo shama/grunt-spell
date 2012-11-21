@@ -13,7 +13,7 @@ module.exports = function(grunt) {
   grunt.util = grunt.util || grunt.utils;
 
   grunt.registerMultiTask('spell', 'A Grunt plugin for spellchecking documents.', function() {
-    var helpers = require('grunt-contrib-lib').init(grunt);
+    var helpers = require('grunt-lib-contrib').init(grunt);
     var options = helpers.options(this);
     var spellHelper = require('./lib/spell.js').init(grunt, options);
     var done = this.async();

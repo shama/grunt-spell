@@ -32,6 +32,9 @@ exports.init = function(grunt, options) {
 
       var data = grunt.file.read(file);
       teach.check(data, function(err, typos) {
+        if (err) {
+          return grunt.log.error(String(err).replace(/\n/g, ' '));
+        }
         exports.printTypos(typos || []);
         next();
       });

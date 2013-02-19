@@ -1,7 +1,7 @@
 {
   "name": "grunt-spell",
   "description": "A Grunt plugin for spellchecking",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "homepage": "https://github.com/shama/grunt-spell",
   "author": {
     "name": "Kyle Robinson Young",
@@ -21,22 +21,28 @@
       "url": "https://github.com/shama/grunt-spell/blob/master/LICENSE-MIT"
     }
   ],
-  "main": "grunt.js",
-  "bin": "bin/grunt-spell",
+  "main": "Gruntfile.js",
   "engines": {
-    "node": "*"
+    "node": ">= 0.8.0"
   },
   "scripts": {
-    "test": "grunt test"
+    "test": "grunt nodeunit -v"
   },
   "dependencies": {
-    "teacher": "~0.0.1",
-    "grunt-lib-contrib": "~0.3.0"
+    "teacher": "0.0.1"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.0"
   },
   "devDependencies": {
-    "grunt": "~0.3.15"
+    "grunt": "~0.4.0",
+    "grunt-contrib-jshint": "~0.1.1",
+    "grunt-contrib-watch": "~0.2.0",
+    "grunt-contrib-nodeunit": "~0.1.2"
   },
   "keywords": [
-    "gruntplugin", "spellcheck", "spelling"
+    "gruntplugin",
+    "spellcheck",
+    "spelling"
   ]
 }

@@ -1,20 +1,20 @@
+'use strict';
+
 var grunt = require('grunt');
-
-// TODO: ditch this when grunt v0.4 is released
-grunt.util = grunt.util || grunt.utils;
-var hooker = grunt.util.hooker;
-
-var spell = require('../../../tasks/lib/spell').init(grunt);
 var path = require('path');
 
-exports.spell = (function() {
-  'use strict';
+var hooker = grunt.util.hooker;
+var spell = require('../../../tasks/lib/spell');
+spell.init();
 
+exports.spell = (function() {
   var _test = {};
 
   _test.setUp = function(done) {
     this.fixtures = path.resolve(__dirname, '..', '..', 'fixtures');
-    done();
+    setTimeout(function() {
+      done();
+    }, 1000);
   };
 
   _test.errors = function(test) {

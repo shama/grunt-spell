@@ -32,7 +32,7 @@
     "teacher": "0.0.1"
   },
   "peerDependencies": {
-    "grunt": "~0.4.0"
+    "grunt": ">=0.4.0"
   },
   "devDependencies": {
     "grunt": "~0.4.0",

@@ -2,7 +2,7 @@
  * grunt-spell
  * https://github.com/shama/grunt-spell
  *
- * Copyright (c) 2013 Kyle Robinson Young
+ * Copyright (c) 2016 Kyle Robinson Young
  * Licensed under the MIT license.
  */
 

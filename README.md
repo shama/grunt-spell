@@ -70,7 +70,7 @@ Lint and test your code using [grunt][grunt].
 * 0.1.0 - Initial release
 
 ## License
-Copyright (c) 2013 Kyle Robinson Young
+Copyright (c) 2016 Kyle Robinson Young
 Licensed under the MIT license.
 
 [grunt]: https://github.com/gruntjs/grunt
